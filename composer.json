@@ -1,0 +1,42 @@
+{
+    "name": "indigoram89/laravel-fields",
+    "description": "Fields for Laravel 5",
+    "keywords": [
+        "indigoram89", "laravel", "fields"
+    ],
+    "homepage": "https://github.com/indigoram89/laravel-fields",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Orlov",
+            "email": "maksimorlov.personal@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/database": ">=5.4",
+        "illuminate/support": ">=5.4",
+        "indigoram89/laravel-translatable": "1.0.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.*",
+        "orchestra/testbench": "^3.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Indigoram89\\Fields\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Indigoram89\\Fields\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
