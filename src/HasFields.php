@@ -59,7 +59,11 @@ trait HasFields
      */
     public function getTextAttribute()
     {
-        return $this->field('text');
+        if (is_null($value = $this->field('text'))) {
+            return null;
+        }
+
+        return (string) $value;
     }
 
     /**
@@ -81,7 +85,11 @@ trait HasFields
      */
     public function getNameAttribute()
     {
-        return $this->field('name');
+        if (is_null($value = $this->field('name'))) {
+            return null;
+        }
+
+        return (string) $value;
     }
 
     /**
@@ -103,7 +111,11 @@ trait HasFields
      */
     public function getTitleAttribute()
     {
-        return $this->field('title');
+        if (is_null($value = $this->field('title'))) {
+            return null;
+        }
+
+        return (string) $value;
     }
 
     /**
@@ -125,7 +137,11 @@ trait HasFields
      */
     public function getDescriptionAttribute()
     {
-        return $this->field('description');
+        if (is_null($value = $this->field('description'))) {
+            return null;
+        }
+
+        return (string) $value;
     }
 
     /**
@@ -147,7 +163,11 @@ trait HasFields
      */
     public function getContentAttribute()
     {
-        return $this->field('content');
+        if (is_null($value = $this->field('content'))) {
+            return null;
+        }
+
+        return (string) $value;
     }
 
     /**
@@ -169,7 +189,11 @@ trait HasFields
      */
     public function getImageAttribute()
     {
-        return $this->field('image');
+        if (is_null($value = $this->field('image'))) {
+            return null;
+        }
+
+        return (string) $value;
     }
 
     /**
@@ -191,7 +215,11 @@ trait HasFields
      */
     public function getUrlAttribute()
     {
-        return $this->field('url');
+        if (is_null($value = $this->field('url'))) {
+            return null;
+        }
+
+        return (string) $value;
     }
 
     /**
@@ -213,7 +241,11 @@ trait HasFields
      */
     public function getButtonAttribute()
     {
-        return $this->field('button');
+        if (is_null($value = $this->field('button'))) {
+            return null;
+        }
+
+        return (string) $value;
     }
 
     /**
@@ -235,7 +267,11 @@ trait HasFields
      */
     public function getHintAttribute()
     {
-        return $this->field('hint');
+        if (is_null($value = $this->field('hint'))) {
+            return null;
+        }
+
+        return (string) $value;
     }
 
     /**
@@ -257,7 +293,11 @@ trait HasFields
      */
     public function getPlaceholderAttribute()
     {
-        return $this->field('placeholder');
+        if (is_null($value = $this->field('placeholder'))) {
+            return null;
+        }
+
+        return (string) $value;
     }
 
     /**
@@ -279,7 +319,11 @@ trait HasFields
      */
     public function getLabelAttribute()
     {
-        return $this->field('label');
+        if (is_null($value = $this->field('label'))) {
+            return null;
+        }
+
+        return (string) $value;
     }
 
     /**
